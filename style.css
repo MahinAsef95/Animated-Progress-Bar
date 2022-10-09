@@ -1,0 +1,133 @@
+
+*{
+    box-sizing: border-box;
+}
+
+.skill-container{
+
+    background-color: gray;
+    width: 500px;
+    padding: 20px;
+}
+
+.skill-container li{
+
+    font-weight: bold;
+    margin: 50px 0;
+    list-style-type: none;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.skill-container li::before{
+
+    content: '';
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+
+    background-color: rgb(170, 167, 173);
+    width: 100%;
+    height: 25px;
+
+    border-radius: 30px;
+
+}
+
+.skill-container li::after{
+
+    content: '';
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+
+    background-color: rgb(241, 4, 4);
+    width: 0;
+    height: 25px;
+
+    border-radius: 30px;
+
+    /* animation-name: bar-animation; */
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    /* animation-iteration-count: 3; */
+    /* animation-direction: forward; */
+    animation-fill-mode: forwards;
+    
+
+
+}
+
+.skill-container li.html::after{
+
+    animation-name: html-animation;
+}
+
+@keyframes html-animation {
+    to{
+        width: 90%;
+        background-color: rgb(0, 126, 57);
+    }
+}
+
+.skill-container li.css::after{
+    animation-name: css-animation;
+}
+
+@keyframes css-animation {
+    to{
+        width: 60%;
+        background-color: rgb(0, 126, 57);
+    }
+}
+
+.skill-container li.js::after{
+    animation-name: js-animation;
+}
+
+@keyframes js-animation {
+    to{
+        width: 40%;
+    }
+}
+
+.skill-container li.bootstrap::after{
+    animation-name: bootstrap-animation;
+}
+
+@keyframes bootstrap-animation {
+    to{
+        width: 30%;
+    }
+}
+
+.skill-container li.bootstrap::after{
+    animation-name: bootstrap-animation;
+}
+
+@keyframes bootstrap-animation {
+    to{
+        width: 30%;
+    }
+}
+
+.skill-container li.java::after{
+    animation-name: java-animation;
+}
+
+@keyframes java-animation {
+    to{
+        width: 20%;
+    }
+}
+
+.skill-container li.cplus::after{
+    animation-name: cplus-animation;
+}
+
+@keyframes cplus-animation {
+    to{
+        width: 30%;
+    }
+}
+
